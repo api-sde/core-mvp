@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="WebApiMvp\**" />
+      <Compile Remove="Mvp.Core.Model\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="WebApiMvp\**" />
+      <EmbeddedResource Remove="Mvp.Core.Model\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="WebApiMvp\**" />
+      <None Remove="Mvp.Core.Model\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="WebApiMvp\WebApiMvp.csproj" />
+    </ItemGroup>
+
+</Project>
